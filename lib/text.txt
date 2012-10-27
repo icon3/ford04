@@ -1,0 +1,20 @@
+Task 1:
+Include the foo.c file in foo.h to make the code work.
+
+The program is made only executable to the user by changing the rights using chmod. Only executable rights are granted.
+
+chmod 711 a.out
+
+Task 2:
+In order to make the header file universally work without having to specify path every time, we need to set the path to the folder where the header file has been defined.
+
+To do this, we need make use of the environment variables.
+
+$ C_INCLUDE_PATH= /home/ccc/Desktop/marathon/lib
+$ export C_INCLUDE_PATH
+
+What this does is, it checks this folder after checking the usual library file locations.
+
+So the header file can directly be included from a code in a different folder.
+
+And the corresponding function will be executed.
