@@ -1,0 +1,14 @@
+When reusability of large software components is the requirement, it is very helpful if you build a library out of it. This saves you recompilation of the same source code all the time and allows you to keep your program disjoint i.e change one without affecting others. 
+
+Given 
+
+1. foo.h defining the interface to our library, a single function, foo()
+2. foo.c containing the implementation of that function
+3. main.c a driver program that uses the library function foo () 
+
+Your purpose is to create a library foo such that any other program linking to this library, will not have the actualy library code placed in the final program. Instead only a reference to the library.( This is a specific type of library )
+
+Task 1 : Create one such library and write down the steps/commands involved in doing this.
+Task 2 : If this was to be installed (rather than just used while executing programs), give us the steps/commands involved in doing this.
+
+Note : You will have to demo a working version of this library. Submission will only involve a .txt file containing steps/commands
